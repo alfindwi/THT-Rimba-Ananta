@@ -1,4 +1,5 @@
-# 🛠️ RESTful API - Tes Evaluasi Kemampuan Teknis  
+# 🛠️ RESTful API - Tes Evaluasi Kemampuan Teknis
+
 **PT Rimba Ananta Vikasa Indonesia**
 
 ## 📄 Deskripsi Proyek
@@ -7,20 +8,20 @@ Proyek ini adalah RESTful API yang dibangun menggunakan **Laravel**, berfungsi u
 
 ## ✨ Fitur Utama
 
-- **Create**: Menambahkan pengguna baru – `POST /api/users`
-- **Read**: Menampilkan data pengguna – `GET /api/users/{id}`
-- **Update**: Memperbarui data pengguna – `PUT /api/users/{id}`
-- **Delete**: Menghapus data pengguna – `DELETE /api/users/{id}`
-- **Validasi**: Menggunakan Laravel `FormRequest`
-- **Swagger Documentation**: Dokumentasi API interaktif berbasis Swagger
+-   **Create**: Menambahkan pengguna baru – `POST /api/users`
+-   **Read**: Menampilkan data pengguna – `GET /api/users/{id}`
+-   **Update**: Memperbarui data pengguna – `PUT /api/users/{id}`
+-   **Delete**: Menghapus data pengguna – `DELETE /api/users/{id}`
+-   **Validasi**: Menggunakan Laravel `FormRequest`
+-   **Swagger Documentation**: Dokumentasi API interaktif berbasis Swagger
 
 ## 🧰 Teknologi yang Digunakan
 
-- **Laravel** – Backend Framework PHP
-- **PHP** ≥ 8.0
-- **PostgreSQL** – Database
-- **Composer** – Dependency Manager
-- **Swagger (L5-Swagger)** – Dokumentasi API
+-   **Laravel** – Backend Framework PHP
+-   **PHP** ≥ 8.0
+-   **PostgreSQL** – Database
+-   **Composer** – Dependency Manager
+-   **Swagger (L5-Swagger)** – Dokumentasi API
 
 ---
 
@@ -30,10 +31,10 @@ Proyek ini adalah RESTful API yang dibangun menggunakan **Laravel**, berfungsi u
 
 Pastikan sudah terinstal:
 
-- PHP ≥ 8.0
-- Composer
-- PostgreSQL
-- Git
+-   PHP ≥ 8.0
+-   Composer
+-   PostgreSQL
+-   Git
 
 ### 🚀 Langkah-langkah Instalasi
 
@@ -57,7 +58,7 @@ Pastikan sudah terinstal:
     ```
 
 4. **Konfigurasi Database**  
-    Edit file `.env` dan sesuaikan bagian berikut:
+   Edit file `.env` dan sesuaikan bagian berikut:
 
     ```env
     DB_CONNECTION=pgsql
@@ -101,8 +102,8 @@ php artisan test
 
 ---
 
-
 ## 📘 API Documentation (Swagger)
+
 Swagger hanya tersedia secara lokal.
 
 🔗 Akses di Browser:
@@ -116,24 +117,25 @@ http://localhost:8000/api/documentation
 ```bash
 php artisan l5-swagger:generate
 ```
+
 ---
 
-🧱 Penjelasan Arsitektur & Alur Kerja
+## 🧱 Penjelasan Arsitektur & Alur Kerja
 
-- Routes didefinisikan di routes/api.php
+-   Routes didefinisikan di routes/api.php
 
-- Controller: Mengelola logika CRUD utama (UserController)
+-   Controller: Mengelola logika CRUD utama (UserController)
 
-- Request Validation: Menggunakan FormRequest khusus (UserRequest)
+-   Request Validation: Menggunakan FormRequest khusus (UserRequest)
 
-- Model: Laravel Eloquent digunakan untuk representasi data user
+-   Model: Laravel Eloquent digunakan untuk representasi data user
 
-- Database Migration: Menyiapkan struktur tabel pengguna
+-   Database Migration: Menyiapkan struktur tabel pengguna
 
-- Swagger: Digunakan untuk dokumentasi otomatis berbasis anotasi
+-   Swagger: Digunakan untuk dokumentasi otomatis berbasis anotasi
 
 Alur kerja standar :
 
 ```bash
 Client → API Route → Controller → Validasi Request → Proses Database → Response JSON
-``` 
+```
