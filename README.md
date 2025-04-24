@@ -116,3 +116,24 @@ http://localhost:8000/api/documentation
 ```bash
 php artisan l5-swagger:generate
 ```
+---
+
+🧱 Penjelasan Arsitektur & Alur Kerja
+
+- Routes didefinisikan di routes/api.php
+
+- Controller: Mengelola logika CRUD utama (UserController)
+
+- Request Validation: Menggunakan FormRequest khusus (UserRequest)
+
+- Model: Laravel Eloquent digunakan untuk representasi data user
+
+- Database Migration: Menyiapkan struktur tabel pengguna
+
+- Swagger: Digunakan untuk dokumentasi otomatis berbasis anotasi
+
+Alur kerja standar :
+
+```bash
+Client → API Route → Controller → Validasi Request → Proses Database → Response JSON
+``` 
